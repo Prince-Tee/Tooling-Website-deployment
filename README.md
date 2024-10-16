@@ -136,19 +136,42 @@ Make a small change to the `README.md` in the GitHub repo. This should automatic
 
 ### Step 2: Configure SSH to NFS  
 1. Open **Manage Jenkins** > **System**, and scroll to **Publish over SSH**.
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/choose%20system.PNG)
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/go%20to%20system%20then%20scroll%20dowv%20to%20publish%20ssh%20then%20ssh%20servers.PNG)
+
 2. Add your NFS server:
    - Provide the private key, server name (`NFS-server`), and remote directory (`/mnt/apps`).
    - Ensure that Jenkins has SSH access to the NFS server.
 
+   ![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/the%20content.PNG)
+
 ### Step 3: Post-Build Action  
 1. Go to **Post-build Actions** and configure **Send build artifacts over SSH**.
-2. Define the directory `/mnt/apps` and use `**` to represent all files.
 
 ![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/send%20build%20to%20ssh.PNG)
 
-### Step 4: Test the Configuration  
+2. Define the directory `/mnt/apps` and use `**` to represent all files.
+
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/send%20build%20to%20ssh.PNG)
+
+![screensho](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/ssh%20configuration%20tested.PNG)
+
+### Step 4: Test the Configuration 
+
+!([screenshot]https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/ssh%20configuration%20tested.PNG)
+
 1. Modify the `README.md` again in the GitHub repo.
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/make%20another%20changes%20and%20commit.PNG)
+
 2. Confirm successful build and transfer of artifacts to `/mnt/apps` on the NFS server.
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/the%20job%20showing%20succesful.PNG)
+
+![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/the%20changes%20shown%20on%20git%20bash.PNG)
 
 ## Troubleshooting
 
@@ -157,7 +180,3 @@ Make a small change to the `README.md` in the GitHub repo. This should automatic
 
 ## Conclusion  
 In this guide, we've automated Jenkins builds triggered by GitHub webhooks and transferred build artifacts to an NFS server via SSH. This is a foundation for more complex CI/CD tasks.
-
----
-
-This documentation follows the steps and structure from your original write-up but adapts it for clear readability on GitHub. Let me know if you need further adjustments or screenshots!
