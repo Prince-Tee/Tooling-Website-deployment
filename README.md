@@ -161,7 +161,7 @@ Make a small change to the `README.md` in the GitHub repo. This should automatic
 
 ### Step 4: Test the Configuration 
 
-!([screenshot]https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/ssh%20configuration%20tested.PNG)
+!([screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/ssh%20configuration%20tested.PNG)
 
 1. Modify the `README.md` again in the GitHub repo.
 
