@@ -50,7 +50,7 @@ java -version
    ```bash
    sudo systemctl status jenkins
    ```
-  ! [screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/jenkins%20runing%20sudo%20systemctl%20status%20jenkins.PNG)
+  ![screenshot](https://github.com/Prince-Tee/Tooling-Website-deployment/blob/main/screenshot%20from%20my%20local%20en/jenkins%20runing%20sudo%20systemctl%20status%20jenkins.PNG)
 
 4. Access Jenkins via browser using its public IP and port `8080`:
    ```
